@@ -240,6 +240,7 @@ export default function Home() {
 									</tbody>
 								</table>
 							</div>
+							<p className="mt-4 text-gray-500 text-sm">Nálgastu þessi gögn frítt á <a href="https://openstax.org/books/college-physics/pages/14-2-temperature-change-and-heat-capacity" className="underline">https://openstax.org/books/college-physics/pages/14-2-temperature-change-and-heat-capacity</a>.</p>
 						</div>
                     </div>
                 </div>

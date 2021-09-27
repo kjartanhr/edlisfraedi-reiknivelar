@@ -267,6 +267,7 @@ export default function Home() {
                                     </tbody>
                                 </table>
 							</div>
+                            <p className="mt-4 text-gray-500 text-sm">Nálgastu þessi gögn frítt á <a href="https://openstax.org/books/college-physics/pages/1-introduction-to-science-and-the-realm-of-physics-physical-quantities-and-units" className="underline">https://openstax.org/books/college-physics/pages/1-introduction-to-science-and-the-realm-of-physics-physical-quantities-and-units</a>.</p>
 						</div>
                     </div>
                 </div>

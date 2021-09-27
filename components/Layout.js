@@ -18,7 +18,7 @@ export default function Layout({children}) {
         <div className="py-8">
             <div className="max-w-screen-xl mx-auto px-4">
                 <div className="flex flex-col md:flex-row">
-                    <p className="text-gray-500 text-sm">&copy; Kjartan Hrafnkelsson. Allur réttur áskilinn.</p>
+                    <p className="text-gray-500 text-sm">&copy; Kjartan Hrafnkelsson. Allur réttur áskilinn nema að annað sé tekið fram.</p>
                     <div className="flex items-center flex-grow md:justify-end gap-4">
                         <Link href="/skilmalar"><a className="text-sm text-gray-500 underline">Skilmálar</a></Link>
                         <Link href="/personuvernd"><a className="text-sm text-gray-500 underline">Persónuvernd</a></Link>
