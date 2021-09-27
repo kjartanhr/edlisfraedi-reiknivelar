@@ -1,82 +1,35 @@
 import Head from 'next/head'
+import Link from 'next/link'
+
+import { ArrowRightIcon } from '@heroicons/react/outline'
+
+import Layout from '../components/Layout'
 
 export default function Home() {
-  return (
-    <div className="flex flex-col items-center justify-center min-h-screen py-2">
-      <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-
-      <main className="flex flex-col items-center justify-center w-full flex-1 px-20 text-center">
-        <h1 className="text-6xl font-bold">
-          Welcome to{' '}
-          <a className="text-blue-600" href="https://nextjs.org">
-            Next.js!
-          </a>
-        </h1>
-
-        <p className="mt-3 text-2xl">
-          Get started by editing{' '}
-          <code className="p-3 font-mono text-lg bg-gray-100 rounded-md">
-            pages/index.js
-          </code>
-        </p>
-
-        <div className="flex flex-wrap items-center justify-around max-w-4xl mt-6 sm:w-full">
-          <a
-            href="https://nextjs.org/docs"
-            className="p-6 mt-6 text-left border w-96 rounded-xl hover:text-blue-600 focus:text-blue-600"
-          >
-            <h3 className="text-2xl font-bold">Documentation &rarr;</h3>
-            <p className="mt-4 text-xl">
-              Find in-depth information about Next.js features and API.
-            </p>
-          </a>
-
-          <a
-            href="https://nextjs.org/learn"
-            className="p-6 mt-6 text-left border w-96 rounded-xl hover:text-blue-600 focus:text-blue-600"
-          >
-            <h3 className="text-2xl font-bold">Learn &rarr;</h3>
-            <p className="mt-4 text-xl">
-              Learn about Next.js in an interactive course with quizzes!
-            </p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className="p-6 mt-6 text-left border w-96 rounded-xl hover:text-blue-600 focus:text-blue-600"
-          >
-            <h3 className="text-2xl font-bold">Examples &rarr;</h3>
-            <p className="mt-4 text-xl">
-              Discover and deploy boilerplate example Next.js projects.
-            </p>
-          </a>
-
-          <a
-            href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className="p-6 mt-6 text-left border w-96 rounded-xl hover:text-blue-600 focus:text-blue-600"
-          >
-            <h3 className="text-2xl font-bold">Deploy &rarr;</h3>
-            <p className="mt-4 text-xl">
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
-        </div>
-      </main>
-
-      <footer className="flex items-center justify-center w-full h-24 border-t">
-        <a
-          className="flex items-center justify-center"
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className="h-4 ml-2" />
-        </a>
-      </footer>
-    </div>
-  )
+	return (<>
+		<Head>
+			<title>Eðlisfræðiverkefni K2 2021H</title>
+		</Head>
+        <Layout>
+            <div className="flex flex-grow items-center">
+                <div className="w-full">
+                    <div className="max-w-md mx-auto px-4">
+                        <div>
+                            <div className="text-center pb-10">
+                                <h1 className="text-3xl text-white">Eðlisfræði-reiknivélar</h1>
+                            </div>
+                            <div className="flex justify-center pb-10">
+                                <img src="/atom.svg" className="animate animate-spin-slow h-36" />
+                            </div>
+                            <p className="text-gray-200 text-base mb-4">Þessi síða er full af ýmsum reiknivélum til að leysa ýmisleg eðlisfræðidæmi. Reiknivélarnar sýna hvernig lokaformúlan lítur út og skrefin til að finna lausnina.</p>
+                            <Link href="/reiknivelar"><a className="bg-green-600 p-3 rounded shadow-sm text-white flex items-center justify-center w-full text-lg group hover:bg-green-700 transition duration-200 focus:outline-none focus:ring-4 focus:ring-green-600 focus:ring-opacity-50">
+                                <span>Byrjum að reikna</span>
+                                <ArrowRightIcon className="h-5 w-5 ml-2 transform group-hover:translate-x-0.5 transition duration-200" />
+                            </a></Link>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </Layout>
+	</>);
 }

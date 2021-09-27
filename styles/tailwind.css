@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+input[type=number] {
+    @apply text-white border-b border-gray-300 focus:outline-none bg-transparent focus:border-white transition duration-200 md:ml-2 md:mb-0 w-full md:w-48 text-lg;
+}
+
+.nav-link {
+    @apply text-lg text-gray-200 border-b-2 border-transparent hover:text-white hover:border-white transition duration-200;
+}
+
+.attrib {
+    @apply hidden md:block;
+}
+
+:focus {
+    outline-style: dotted;
+    outline-width: thin;
+}
+
+table, table th, table tr, table td {
+    @apply border border-gray-600 border-dotted p-2;
+}
